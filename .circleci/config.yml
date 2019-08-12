@@ -12,5 +12,9 @@ jobs:
           command: ./hello
 
       - run:
+          name: Prerequisites
+          command: sudo apt-get -y update && sudo apt-get -y install git python curl
+
+      - run:
           name: Release
           command: ./release.sh
