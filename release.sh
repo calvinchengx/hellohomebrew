@@ -5,7 +5,7 @@ GH_PATH=$GITHUB_API_TOKEN
 GH_REPO=hellohomebrew
 GH_TARGET=master
 ASSETS_PATH=.
-VERSION=0.0.3
+VERSION=0.0.4
 tar --exclude='./.git' --exclude='./README.md' --exclude="hello-${VERSION}.tar.gz" --exclude='./.circleci' -zcvf "hello-${VERSION}.tar.gz" . 
 
 git add -u
