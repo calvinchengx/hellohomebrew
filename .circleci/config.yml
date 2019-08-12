@@ -14,3 +14,7 @@ jobs:
       - run:
           name: Package
           command: tar --exclude='./.git' --exclude='./README.md' --exclude="hello.tar.gz" --exclude='./.circleci' -zcvf "hello.tar.gz" .
+
+      - run:
+          name: Release
+          command: ./release.sh
